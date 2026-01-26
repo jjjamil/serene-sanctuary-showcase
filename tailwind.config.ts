@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Cormorant Garamond', 'Georgia', 'serif'],
-        body: ['DM Sans', 'system-ui', 'sans-serif'],
+        display: ['Bebas Neue', 'Impact', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,16 +51,21 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
-          dark: "hsl(var(--gold-dark))",
+        olive: {
+          DEFAULT: "hsl(var(--olive))",
+          light: "hsl(var(--olive-light))",
+          dark: "hsl(var(--olive-dark))",
         },
-        cream: "hsl(var(--cream))",
-        ivory: "hsl(var(--ivory))",
-        charcoal: "hsl(var(--charcoal))",
-        stone: "hsl(var(--stone))",
-        taupe: "hsl(var(--taupe))",
+        sand: {
+          DEFAULT: "hsl(var(--sand))",
+          dark: "hsl(var(--sand-dark))",
+        },
+        steel: {
+          DEFAULT: "hsl(var(--steel))",
+          dark: "hsl(var(--steel-dark))",
+        },
+        gunmetal: "hsl(var(--gunmetal))",
+        coyote: "hsl(var(--coyote))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -98,6 +103,10 @@ export default {
           "0%": { opacity: "0", transform: "translateX(20px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
         },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 20px hsl(82 35% 35% / 0.2)" },
+          "50%": { boxShadow: "0 0 40px hsl(82 35% 35% / 0.4)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -105,11 +114,12 @@ export default {
         "fade-up": "fade-up 0.8s ease-out forwards",
         "fade-in": "fade-in 0.6s ease-out forwards",
         "slide-in-right": "slide-in-right 0.6s ease-out forwards",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
       boxShadow: {
-        'soft': '0 4px 20px -4px hsl(30 10% 15% / 0.08)',
-        'medium': '0 8px 30px -8px hsl(30 10% 15% / 0.12)',
-        'elegant': '0 20px 50px -15px hsl(30 10% 15% / 0.15)',
+        'tactical': '0 4px 20px -4px hsl(0 0% 0% / 0.5)',
+        'heavy': '0 8px 30px -8px hsl(0 0% 0% / 0.7)',
+        'glow': '0 0 30px hsl(82 35% 35% / 0.15)',
       },
     },
   },

@@ -1,4 +1,4 @@
-import { Instagram, Facebook, ArrowUp } from "lucide-react";
+import { Instagram, Facebook, Youtube, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -6,38 +6,44 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground py-16">
+    <footer className="bg-background py-16 border-t border-border">
       <div className="section-container">
         {/* Top Row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
           {/* Logo */}
-          <a href="#" className="font-display text-3xl font-light text-ivory">
-            Aurelian
+          <a href="#" className="font-display text-3xl text-foreground">
+            VANGUARD<span className="text-primary">.</span>
           </a>
 
           {/* Social Links */}
           <div className="flex items-center gap-6">
             <a
               href="#"
-              className="text-ivory/60 hover:text-gold transition-colors duration-300"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Instagram"
             >
               <Instagram size={20} strokeWidth={1.5} />
             </a>
             <a
               href="#"
-              className="text-ivory/60 hover:text-gold transition-colors duration-300"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="Facebook"
             >
               <Facebook size={20} strokeWidth={1.5} />
+            </a>
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
+              aria-label="YouTube"
+            >
+              <Youtube size={20} strokeWidth={1.5} />
             </a>
           </div>
 
           {/* Back to Top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-2 text-sm tracking-widest uppercase text-ivory/60 hover:text-gold transition-colors duration-300"
-            style={{ letterSpacing: "0.1em" }}
+            className="flex items-center gap-2 text-sm tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors duration-300"
           >
             Back to top
             <ArrowUp size={16} />
@@ -45,87 +51,102 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-ivory/10 mb-12" />
+        <div className="h-px bg-border mb-12" />
 
         {/* Navigation Links */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h4 className="text-xs tracking-widest uppercase text-ivory/40 mb-4" style={{ letterSpacing: "0.15em" }}>
-              Hotel
+            <h4 className="text-xs tracking-widest uppercase text-muted-foreground mb-4">
+              Products
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#experience" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Experience
+                <a href="#categories" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Tactical Apparel
                 </a>
               </li>
               <li>
-                <a href="#rooms" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Accommodations
+                <a href="#categories" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Plate Carriers
                 </a>
               </li>
               <li>
-                <a href="#amenities" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Amenities
+                <a href="#categories" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Backpacks
+                </a>
+              </li>
+              <li>
+                <a href="#categories" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Accessories
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs tracking-widest uppercase text-ivory/40 mb-4" style={{ letterSpacing: "0.15em" }}>
-              Discover
+            <h4 className="text-xs tracking-widest uppercase text-muted-foreground mb-4">
+              Company
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#gallery" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Gallery
+                <a href="#story" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Our Story
                 </a>
               </li>
               <li>
-                <a href="#location" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Location
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  Events
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Press
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs tracking-widest uppercase text-ivory/40 mb-4" style={{ letterSpacing: "0.15em" }}>
-              Contact
+            <h4 className="text-xs tracking-widest uppercase text-muted-foreground mb-4">
+              Support
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+1234567890" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  +1 (234) 567-890
+                <a href="#contact" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Contact Sales
                 </a>
               </li>
               <li>
-                <a href="mailto:reservations@aurelian.com" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
-                  reservations@aurelian.com
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Warranty
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  Returns
                 </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs tracking-widest uppercase text-ivory/40 mb-4" style={{ letterSpacing: "0.15em" }}>
+            <h4 className="text-xs tracking-widest uppercase text-muted-foreground mb-4">
               Legal
             </h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-ivory/60 hover:text-ivory transition-colors duration-300">
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
                   Terms of Use
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-foreground/70 hover:text-primary transition-colors duration-300">
+                  ITAR Compliance
                 </a>
               </li>
             </ul>
@@ -133,9 +154,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Row */}
-        <div className="text-center">
-          <p className="text-sm text-ivory/40">
-            © {new Date().getFullYear()} Aurelian. All rights reserved.
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Vanguard Tactical. All rights reserved.
+          </p>
+          <p className="text-xs text-muted-foreground">
+            ITAR Registered • Made in USA
           </p>
         </div>
       </div>

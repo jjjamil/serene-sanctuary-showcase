@@ -1,23 +1,23 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
-import Rooms from "@/components/Rooms";
-import Amenities from "@/components/Amenities";
-import Gallery from "@/components/Gallery";
-import Location from "@/components/Location";
+import ProductCategories from "@/components/ProductCategories";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import FeaturedGear from "@/components/FeaturedGear";
+import UseCases from "@/components/UseCases";
+import BrandStory from "@/components/BrandStory";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <Header />
       <Hero />
-      <Experience />
-      <Rooms />
-      <Amenities />
-      <Gallery />
-      <Location />
+      <ProductCategories />
+      <FeaturedGear />
+      <WhyChooseUs />
+      <UseCases />
+      <BrandStory />
       <Contact />
       <Footer />
     </main>
